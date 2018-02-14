@@ -7,6 +7,9 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 1.2---Release Date: Feb 13, 2018---
+Completed Job 1
+
 ---Version 1.1---Release Date: Feb 13, 2018---
 Edited Changelog from Captain's repo
 

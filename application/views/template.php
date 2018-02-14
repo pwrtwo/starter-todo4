@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>{pagetitle}</title>
+	<meta charset="utf-8">
+	<title>{pagetitle}</title>
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
@@ -13,7 +13,7 @@
             <div class="navbar navbar-default">
                 <div class="navbar-inner">
                     {menubar} 
-				</div>
+		</div>
             </div>           
             <div id="content">
                 <h1>{pagetitle}</h1>
