@@ -7,6 +7,11 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+---Version 1.3---Release Date: Feb 17, 2018---
+Edited render() in MY_Controller.php 
+Added a <div> tag and a table in homepage.php 
+Edited Welcome.php
+
 ---Version 1.2---Release Date: Feb 13, 2018---
 Completed Job 1
 
