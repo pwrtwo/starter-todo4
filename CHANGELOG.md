@@ -7,6 +7,10 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+## Version 1.6---Release Date: Feb. 27, 2018---
+
+Completed Job 7 User Roles
+
 ## Version 1.5---Release Date: Feb. 27, 2018---
 
 Completed Job 6 Pagination
