@@ -7,6 +7,10 @@ Team membership:
 
 Team conventions: Allman notation, markdown for changelog
 
+## Version 1.8---Release Date: Feb. 27, 2018---
+
+Completed Job 9 Role-specific maintenance list
+
 ## Version 1.7---Release Date: Feb. 27, 2018---
 
 Completed Job 8 Add "completion" to Homepage
