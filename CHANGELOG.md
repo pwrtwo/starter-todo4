@@ -6,6 +6,13 @@ Team membership:
 - Michael Navarro
 
 Team conventions: Allman notation, markdown for changelog
+## Version 1.10---Release Date: March. 3, 2018---
+
+Completed Job 11 Polish the Task Item Maintenance
+
+## Version 1.9---Release Date: March. 3, 2018---
+
+Completed Job 10 Task Item Maintenance
 
 ## Version 1.8---Release Date: Feb. 27, 2018---
 
