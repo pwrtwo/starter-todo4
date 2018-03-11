@@ -64,7 +64,7 @@ class Task extends Entity {
             throw new InvalidArgumentException('Group must have value');
         }
         if ($value > 4 || $value < 1) {
-            throw new InvalidArgumentException('Size must be between 1 and 4');
+            throw new InvalidArgumentException('Group must be between 1 and 4');
         }
         $this->group = $value;
         return $this;
