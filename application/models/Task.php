@@ -70,17 +70,17 @@ class Task extends Entity {
         return $this;
     }
 
-    function setDeadline($value) {
+    public function setDeadline($value) {
         $this->deadline = $value;
         return $this;
     }
 
-    function setStatus($value) {
+    public function setStatus($value) {
         $this->status = $value;
         return $this;
     }
 
-    function setFlag($value) {
+    public function setFlag($value) {
         $this->flag = $value;
         return $this;
     }
