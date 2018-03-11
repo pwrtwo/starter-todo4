@@ -53,7 +53,7 @@ class Task extends Entity {
             throw new InvalidArgumentException('Size must have value');
         }
         if ($value > 3 || $value < 1) {
-            throw new InvalidArgumentException('Priority must be between 1 and 3');
+            throw new InvalidArgumentException('Size must be between 1 and 3');
         }
         $this->size = $value;
         return $this;
@@ -64,7 +64,7 @@ class Task extends Entity {
             throw new InvalidArgumentException('Group must have value');
         }
         if ($value > 4 || $value < 1) {
-            throw new InvalidArgumentException('Priority must be between 1 and 3');
+            throw new InvalidArgumentException('Size must be between 1 and 4');
         }
         $this->group = $value;
         return $this;
