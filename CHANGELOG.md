@@ -6,6 +6,11 @@ Team membership:
 - Michael Navarro
 
 Team conventions: Allman notation, markdown for changelog
+
+## Version 1.11---Release Date: March. 10, 2018---
+
+Added unit testing
+
 ## Version 1.10---Release Date: March. 3, 2018---
 
 Completed Job 11 Polish the Task Item Maintenance
