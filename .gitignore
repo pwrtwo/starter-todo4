@@ -17,4 +17,7 @@ application/logs/*
 /vendor/
 /nbproject/private/
 /nbproject/
-tmp/*
+*/tmp/
+/vendor/
+composer.lock
+/tests/build/
