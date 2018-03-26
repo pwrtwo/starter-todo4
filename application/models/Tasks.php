@@ -36,8 +36,9 @@ class Tasks extends XML_Model {
     }
     
     public function load() {
-        if (($tasks = simplexml_load_file($this->_origin)) !== FALSE)
-	{		foreach ($tasks as $task) {
+		if (($tasks = simplexml_load_file($this->_origin)) !== FALSE)
+		{
+			foreach ($tasks as $task) {
 				$record = new stdClass();
 				$record->id = (int) $task->id;
 				$record->task = (string) $task->desc;
@@ -47,6 +48,7 @@ class Tasks extends XML_Model {
 				$record->deadline = (string) $task->deadline;
 				$record->status = (int) $task->status;
 				$record->flag = (int) $task->flag;
+
 				$this->_data[$record->id] = $record;
 			}
 		}
@@ -57,13 +59,37 @@ class Tasks extends XML_Model {
     }
 
     public function store() {
-        if (($handle = fopen($this->_origin, "w")) !== FALSE)
+		/*
+			fputcsv($handle, $this->_fields);
+			foreach ($this->_data as $key => $record)
+				fputcsv($handle, array_values((array) $record));
+			fclose($handle);
+		}
+		// --------------------
+		*/
+		$xmlDoc = new DOMDocument( "1.0");
+            $xmlDoc->preserveWhiteSpace = false;
+            $xmlDoc->formatOutput = true;
+            $this->xml = simplexml_load_file(realpath($this->_origin));
+        $data = $xmlDoc->createElement($this->xml->getName());
+        foreach($this->_data as $key => $value)
         {
-        fputcsv($handle, $this->_fields);
-	foreach ($this->_data as $key => $record)
-            fputcsv($handle, array_values((array) $record));
-	fclose($handle);
-        }
+            $task  = $xmlDoc->createElement($this->xml->children()->getName());
+            foreach ($value as $itemkey => $record ) {
+                    if($itemkey === "task") {
+                        $itemkey = "desc";
+                        $item = $xmlDoc->createElement($itemkey, htmlspecialchars($record));
+                        $task->appendChild($item);
+                    } else {
+                        $item = $xmlDoc->createElement($itemkey, htmlspecialchars($record));
+                        $task->appendChild($item);
+                    }
+                }
+                $data->appendChild($task);
+            }
+            $xmlDoc->appendChild($data);
+            $xmlDoc->saveXML($xmlDoc);
+            $xmlDoc->save($this->_origin);
     }
     
 }
