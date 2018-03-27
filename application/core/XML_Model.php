@@ -76,7 +76,7 @@ class XML_Model extends Memory_Model
 			      // error so redirect or handle error
 			      header('location: /404.php');
 			      exit;
-			}
+                    }
 
 		    $xmlarray =$this->xml;
 
@@ -114,10 +114,11 @@ class XML_Model extends Memory_Model
 
 		    	//get objects one by one
 		    	foreach ($oj as $key => $value) {
+                            
 		    		$one->$key = (string)$value;
 		    	}
 		    	$this->_data[$dataindex++] =$one; 
-		    }	
+		    }
 
 
 		 	//var_dump($this->_data);
