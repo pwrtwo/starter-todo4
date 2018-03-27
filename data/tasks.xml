@@ -58,22 +58,6 @@
     <size>3</size>
     <group>4</group>
     <deadline>20170305</deadline>
-    <status>0</status>
-    <flag>0</flag>
-  </task>
-  <task>
-    <id>7</id>
-    <desc>Buy steel-toed boots</desc>
-    <priority>2</priority>
-    <size>1</size>
-    <group>3</group>
-    <deadline/>
-    <status>0</status>
-    <flag>0</flag>
-  </task>
-  <task>
-    <id>8</id>
-    <desc>Learn French</desc>
     <priority>1</priority>
     <size>3</size>
     <group>3</group>
