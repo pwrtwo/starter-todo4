@@ -153,8 +153,8 @@ class XML_Model extends Memory_Model
 		// --------------------
 		*/
 		$xmlDoc = new DOMDocument( "1.0");
-        $xmlDoc->preserveWhiteSpace = false;
-        $xmlDoc->formatOutput = true;
+            $xmlDoc->preserveWhiteSpace = false;
+            $xmlDoc->formatOutput = true;
         $data = $xmlDoc->createElement($this->xml->getName());
         foreach($this->_data as $key => $value)
         {
