@@ -1,6 +1,7 @@
 <?php
 
 class Tasks extends XML_Model {
+
     
     private $CI;
 
@@ -18,6 +19,7 @@ class Tasks extends XML_Model {
         // substitute the category name, for sorting
         foreach ($undone as $task)
             $task->group = $this->CI->app->group($task->group); // use CI to get at the app model
+
         // order them by category
         usort($undone, "orderByCategory");
         // convert the array of task objects into an array of associative objects       
