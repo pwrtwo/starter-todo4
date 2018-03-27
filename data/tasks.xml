@@ -3,11 +3,11 @@
   <task>
     <id>1</id>
     <desc>COMP1234 assignment</desc>
-    <priority>2</priority>
+    <priority>1</priority>
     <size>2</size>
     <group>2</group>
     <deadline>20170219</deadline>
-    <status>1</status>
+    <status>2</status>
     <flag>0</flag>
     <submit>Update the TODO task</submit>
   </task>
@@ -58,10 +58,6 @@
     <size>3</size>
     <group>4</group>
     <deadline>20170305</deadline>
-    <priority>1</priority>
-    <size>3</size>
-    <group>3</group>
-    <deadline>20161231</deadline>
     <status>1</status>
     <flag>0</flag>
   </task>
